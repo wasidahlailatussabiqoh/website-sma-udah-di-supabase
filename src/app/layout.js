@@ -1,12 +1,13 @@
+
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 export const metadata = {
   title: "SMAN 4 MUARO JAMBI",
-  description: "Website profil SMAN 4 MUARO JAMBI",
+  description: "Website profil SMAN 4 Muaro Jambi",
   icons: {
-    icon: '/logosmanpa.jpeg',
+    icon: "/logosmanpa.jpeg",
   },
 };
 
