@@ -3,8 +3,11 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 export const metadata = {
-  title: "[NAMA SMA]",
-  description: "Website profil [NAMA SMA]",
+  title: "SMAN 4 MUARO JAMBI",
+  description: "Website profil SMAN 4 MUARO JAMBI",
+  icons: {
+    icon: '/logosmanpa.jpeg',
+  },
 };
 
 export default function RootLayout({ children }) {
