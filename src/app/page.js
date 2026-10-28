@@ -1,10 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import BeritaCard from "../components/BeritaCard";
-import berita from "../data/berita";
+import BeritaList from "../components/BeritaList";
 
 export default function HomePage() {
-  const beritaTerbaru = berita.slice(0, 3);
 
   return (
     <main className="bg-white text-slate-800">
@@ -164,18 +162,7 @@ export default function HomePage() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {beritaTerbaru.map((item) => (
-              <BeritaCard
-                key={item.id}
-                id={item.id}
-                title={item.title}
-                date={item.date}
-                image={item.image}
-                excerpt={item.excerpt}
-              />
-            ))}
-          </div>
+          <BeritaList limit={3} />
         </div>
       </section>
     </main>

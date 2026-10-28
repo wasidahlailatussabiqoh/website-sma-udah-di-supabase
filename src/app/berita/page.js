@@ -1,5 +1,4 @@
-import BeritaCard from "../../components/BeritaCard";
-import berita from "../../data/berita";
+﻿import BeritaList from "../../components/BeritaList";
 
 export const metadata = {
   title: "Berita & Kegiatan - SMAN 4 Muaro Jambi",
@@ -21,18 +20,7 @@ export default function BeritaPage() {
           </p>
         </header>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {berita.map((item) => (
-            <BeritaCard
-              key={item.id}
-              id={item.id}
-              title={item.title}
-              date={item.date}
-              image={item.image}
-              excerpt={item.excerpt}
-            />
-          ))}
-        </div>
+        <BeritaList />
       </div>
     </main>
   );
